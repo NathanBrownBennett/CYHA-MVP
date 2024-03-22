@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.App.light {
+  background-color: #F8F9FA; /* Light Background */
+  color: #343A40; /* Dark Text */
+}
+
+.App.dark {
+  background-color: #343A40; /* Dark Background */
+  color: #F8F9FA; /* Light Text */
+}
+
+/* Add more styling here for dark mode based on your color scheme */
+

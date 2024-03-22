@@ -1,0 +1,20 @@
+div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #0056B3; /* Accent Color */
+    color: #F8F9FA; /* Secondary Color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #007BFF; /* Primary Color */
+  }
+  

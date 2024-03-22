@@ -1,0 +1,16 @@
+.welcome-banner {
+    background-color: #007BFF; /* Primary Color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .welcome-banner h1 {
+    margin: 0;
+    color: #F8F9FA; /* Slightly lighter for contrast */
+  }
+  
+  .welcome-banner p {
+    margin: 10px 0 0;
+  }
+  
