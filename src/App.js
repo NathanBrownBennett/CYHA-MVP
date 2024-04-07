@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import WelcomeBanner from './components/WelcomeBanner';
-import SignInRegister from './components/SignInRegister';
+import SignInRegister from './components/SignInAndRegister';
 import QuickTour from './components/QuickTour';
 import './App.css'; // Global styles
 
@@ -15,8 +15,8 @@ function App() {
     <div className={`App ${theme}`}>
       <button onClick={toggleTheme}>Toggle Theme</button>
       <WelcomeBanner />
-      <SignInRegister />
-      <QuickTour />
+      <SignInRegister onSignIn={handleSignIn} onRegister={handleRegister} />
+      {/* <QuickTour /> */}
     </div>
   );
 }
