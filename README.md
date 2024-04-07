@@ -31,7 +31,7 @@ C:::::C                     Y:::::Y         H:::::H     H:::::H       A:::::::::
 ```
 
 You can view the UML diagram for the flow of this application in "public/diagram for CYH.png"
-
+![diagram for CYH](https://github.com/NathanBrownBennett/CYHA-MVP/assets/46282855/c910fdf1-dc6e-44ba-9f29-e5f370cc8950)
 ```
 = SPEC-01: Commonwealth Youth Hub App (CYHA MVP) Architecture
 :sectnums:
@@ -145,6 +145,8 @@ Non-functional requirements are defined with a focus on usability, ensuring the 
 ```
 
 == Implementation
+<img width="1336" alt="CYHA architecture and interactions" src="https://github.com/NathanBrownBennett/CYHA-MVP/assets/46282855/2368ce15-0930-47de-9431-8e52d466fe4f">
+Architecture & Integration image
 
 ```
 === Frontend Implementation Steps
