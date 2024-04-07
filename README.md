@@ -1,3 +1,64 @@
+CYHA-MVP 
+
+You can view the UML diagram for the flow of this application in "public/diagram for CYH.png"
+
+1. Landing Page
+Functional Requirements:
+
+Welcome Banner: Must dynamically display engaging content with scrolling or animated text highlighting the app's mission.
+Sign-In/Registration: Support sign-in and registration processes, including social media OAuth integration for convenience.
+Quick Tour: Provide a short animation or carousel explaining key features of the app.
+Non-Functional Requirements:
+
+Usability: Ensure the landing page is intuitive and engaging for first-time users.
+Performance: The page should load quickly, with dynamic content being served efficiently.
+Security: Secure authentication mechanisms to protect user information during sign-in and registration.
+2. Dashboard
+Functional Requirements:
+
+Navigation Menu: Implement a sidebar or bottom navigation with icons for main app areas.
+Recent Activity Feed: Aggregate updates from followed networks, forums, etc.
+Quick Access Tiles: Offer shortcuts to frequently used features.
+Non-Functional Requirements:
+
+Customizability: Allow users to customize the layout or the items in the quick access tiles.
+Scalability: Ensure the dashboard can handle a growing number of user interactions and content feeds efficiently.
+3. Authentication
+Functional Requirements:
+
+Sign-In Flow: Implement a sign-in process using Firebase, including handling account existences.
+Registration Flow: Manage the registration process, including email verification and adding new user details to Firebase.
+Non-Functional Requirements:
+
+Security: Implement secure authentication processes, ensuring data protection and privacy.
+Reliability: Ensure a reliable sign-in and registration process even under high load.
+4. User Management
+Functional Requirements:
+
+User Preferences Storage: Store and manage user settings and customization preferences.
+Profile Management: Allow users to view and edit their profile, including personal information and settings.
+Non-Functional Requirements:
+
+Privacy: Ensure user data is handled and stored securely, complying with GDPR and other relevant laws.
+User Experience: Provide a smooth and intuitive interface for managing user settings and profiles.
+5. Additional Functionalities
+Functional Requirements:
+
+Theme Toggling: Enable users to switch between light and dark modes.
+Messages Screen: Support viewing message requests, composing new messages, and displaying all chats.
+For You Page: Display recent polls and posts with prioritization based on likes.
+Make Post Page: Allow users to create and share posts across their profile and the For You Page.
+Non-Functional Requirements:
+
+Accessibility: Ensure all functionalities are accessible, including theme toggling and messaging features.
+Scalability: Design the system to efficiently handle increasing content and interactions over time.
+General Non-Functional Requirements for the Entire App
+Scalability: The app should efficiently manage growing amounts of data and users.
+Performance: Ensure high performance, with quick loading times and responsive interactions.
+Security: Adhere to best practices in security to protect user data and interactions.
+Usability: The app should be intuitive and easy to use, with a focus on user experience.
+Maintainability: Code should be well-documented and structured for easy maintenance and updates.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
