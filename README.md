@@ -1,6 +1,131 @@
 CYHA-MVP 
 
+```
+
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+        CCCCCCCCCCCCCYYYYYYY       YYYYYYYHHHHHHHHH     HHHHHHHHH               AAA                                          MMMMMMMM               MMMMMMMMVVVVVVVV           VVVVVVVVPPPPPPPPPPPPPPPPP        
+     CCC::::::::::::CY:::::Y       Y:::::YH:::::::H     H:::::::H              A:::A                                         M:::::::M             M:::::::MV::::::V           V::::::VP::::::::::::::::P       
+   CC:::::::::::::::CY:::::Y       Y:::::YH:::::::H     H:::::::H             A:::::A                                        M::::::::M           M::::::::MV::::::V           V::::::VP::::::PPPPPP:::::P      
+  C:::::CCCCCCCC::::CY::::::Y     Y::::::YHH::::::H     H::::::HH            A:::::::A                                       M:::::::::M         M:::::::::MV::::::V           V::::::VPP:::::P     P:::::P     
+ C:::::C       CCCCCCYYY:::::Y   Y:::::YYY  H:::::H     H:::::H             A:::::::::A                                      M::::::::::M       M::::::::::M V:::::V           V:::::V   P::::P     P:::::P     
+C:::::C                 Y:::::Y Y:::::Y     H:::::H     H:::::H            A:::::A:::::A                                     M:::::::::::M     M:::::::::::M  V:::::V         V:::::V    P::::P     P:::::P     
+C:::::C                  Y:::::Y:::::Y      H::::::HHHHH::::::H           A:::::A A:::::A                                    M:::::::M::::M   M::::M:::::::M   V:::::V       V:::::V     P::::PPPPPP:::::P      
+C:::::C                   Y:::::::::Y       H:::::::::::::::::H          A:::::A   A:::::A              ---------------      M::::::M M::::M M::::M M::::::M    V:::::V     V:::::V      P:::::::::::::PP       
+C:::::C                    Y:::::::Y        H:::::::::::::::::H         A:::::A     A:::::A             -:::::::::::::-      M::::::M  M::::M::::M  M::::::M     V:::::V   V:::::V       P::::PPPPPPPPP         
+C:::::C                     Y:::::Y         H::::::HHHHH::::::H        A:::::AAAAAAAAA:::::A            ---------------      M::::::M   M:::::::M   M::::::M      V:::::V V:::::V        P::::P                 
+C:::::C                     Y:::::Y         H:::::H     H:::::H       A:::::::::::::::::::::A                                M::::::M    M:::::M    M::::::M       V:::::V:::::V         P::::P                 
+ C:::::C       CCCCCC       Y:::::Y         H:::::H     H:::::H      A:::::AAAAAAAAAAAAA:::::A                               M::::::M     MMMMM     M::::::M        V:::::::::V          P::::P                 
+  C:::::CCCCCCCC::::C       Y:::::Y       HH::::::H     H::::::HH   A:::::A             A:::::A                              M::::::M               M::::::M         V:::::::V         PP::::::PP               
+   CC:::::::::::::::C    YYYY:::::YYYY    H:::::::H     H:::::::H  A:::::A               A:::::A                             M::::::M               M::::::M          V:::::V          P::::::::P               
+     CCC::::::::::::C    Y:::::::::::Y    H:::::::H     H:::::::H A:::::A                 A:::::A                            M::::::M               M::::::M           V:::V           P::::::::P               
+        CCCCCCCCCCCCC    YYYYYYYYYYYYY    HHHHHHHHH     HHHHHHHHHAAAAAAA                   AAAAAAA                           MMMMMMMM               MMMMMMMM            VVV            PPPPPPPPPP               
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                
+
+```
+
 You can view the UML diagram for the flow of this application in "public/diagram for CYH.png"
+
+```
+= SPEC-01: Commonwealth Youth Hub App (CYHA MVP) Architecture
+:sectnums:
+:toc:
+
+== Background
+
+The Commonwealth Youth Hub App (CYHA MVP) is envisioned as a pioneering platform to empower the youth by facilitating collaboration, communication, and community-driven initiatives. This application seeks to merge the interactive elements of popular social platforms to establish a singular space for youths to network, exchange ideas, and participate in community projects.
+
+The primary target audience encompasses young individuals across the Commonwealth nations who are keen to use technology for social betterment, community development, and personal advancement. CYHA MVP is committed to addressing the fragmentation in communication channels for youth, providing an integrated environment for dialogue, project coordination, and implementation.
+
+The app will fill a critical void in accessible, youth-centered platforms that advocate for community projects, networking, and self-improvement. The planned use of front-end technology like React is to ensure a dynamic and responsive user interface, while Firebase is chosen for robust authentication and real-time data synchronization.
+
+Non-functional requirements are defined with a focus on usability, ensuring the platform is intuitive and engaging for newcomers, high performance with quick load times, and strict security protocols to protect user data and privacy.
+```
+
+
+```
+== Requirements
+```
+
+```
+=== Landing Page
+
+.Must Have
+* `+WelcomeBanner()`: Implement a dynamic welcome banner displaying engaging content with animations or scrolling text that introduces the app's mission.
+* `+SignIn()`: Provide a sign-in method supporting traditional and social media OAuth integration.
+* `+Register()`: Offer a registration method for new users, including account creation and verification.
+* `+QuickTour()`: Include a method for a short, interactive tour explaining the app's key features for first-time users.
+
+.Should Have
+* Ensure the landing page is intuitive and engaging, promoting user retention from the first visit.
+* Facilitate seamless navigation from the Landing Page to Authentication and Dashboard sections as per the UML diagram.
+
+.Could Have
+* Interactive elements such as pop-ups or guides that detail new features or highlight community projects.
+
+.Won't Have
+* Complicated backend logic on the landing page that may affect the page's load time and performance.
+```
+```
+=== Dashboard
+
+.Must Have
+* `+NavigationMenu()`: Develop a sidebar or bottom navigation menu with icons to represent the main areas of the application, facilitating ease of access.
+* `+RecentActivityFeed()`: Aggregate and display updates from followed networks, forums, or groups, providing users with recent activity at a glance.
+* `+QuickAccessTiles()`: Implement shortcut tiles to frequently used features to enhance the user experience and app efficiency.
+
+.Should Have
+* Provide users the ability to customize their dashboard layout or the items included in the quick access tiles, supporting a personalized experience.
+* Ensure the dashboard can efficiently scale and manage an increasing volume of user interactions and content without performance degradation.
+
+.Could Have
+* Integrate algorithms that curate the recent activity feed based on the user's behavior and preferences to deliver more personalized content.
+
+.Won't Have
+* Overly complex widgets or features that may clutter the dashboard and detract from the core user experience.
+```
+```
+=== Authentication
+
+.Must Have
+* `+SignInWithFirebase()`: Implement a secure, streamlined sign-in process with Firebase authentication, including social media integrations and account existence checks.
+* `+RegisterUser()`: Create a robust registration process with email verification and detail management in Firebase.
+
+.Should Have
+* Ensure data protection and privacy throughout the authentication process, adhering to industry-standard security practices.
+* Maintain reliability and consistency in the sign-in and registration process, even under high demand.
+
+.Could Have
+* Explore additional security measures like biometric verification or two-factor authentication to further protect user accounts.
+
+.Won't Have
+* Complex or time-consuming authentication steps that could negatively impact the user experience.
+```
+
+=== User Management
+
+.Must Have
+* `+ManageUserPreferences()`: Develop a system to store, manage, and retrieve user preferences and settings to personalize the user experience.
+* Profile editing methods that allow users to manage their personal information and app settings easily.
+
+.Should Have
+* A streamlined interface for user settings management that aligns with an excellent user experience and intuitive navigation.
+* Strict adherence to data privacy laws and regulations, ensuring user information is securely handled and stored.
+
+.Could Have
+* Integration capabilities with external services to offer users a more comprehensive profile management experience.
+
+.Won't Have
+* Overly detailed or complex user settings that might overwhelm users and detract from the usability of the app.
+
+
+```
 
 1. Landing Page
 Functional Requirements:
