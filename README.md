@@ -1,4 +1,4 @@
-CYHA-MVP 
+# CYHA-MVP
 
 ```
 
@@ -107,7 +107,7 @@ Non-functional requirements are defined with a focus on usability, ensuring the 
 .Won't Have
 * Complex or time-consuming authentication steps that could negatively impact the user experience.
 ```
-
+```
 === User Management
 
 .Must Have
@@ -123,74 +123,134 @@ Non-functional requirements are defined with a focus on usability, ensuring the 
 
 .Won't Have
 * Overly detailed or complex user settings that might overwhelm users and detract from the usability of the app.
+```
+```
+=== Additional Functionalities
 
+.Must Have
+* `+ToggleTheme()`: Facilitate a feature to switch between a light and dark theme, enhancing visual comfort for users.
+* Messages Screen functions including `+ViewMessageRequests()`, `+ComposeNewMessage()`, and `+DisplayChats()` to handle all aspects of user communication within the app.
+* For You Page features such as `+ShowRecentPollsAndPosts()` and `+PrioritizePostsByLikes()` to curate a dynamic and engaging content feed.
+* Make Post Page methods `+CreatePost()` and `+SharePost()` that empower users to generate and disseminate content across the platform.
 
+.Should Have
+* Ensure the entire application is accessible, with consideration for users with disabilities, fulfilling ADA compliance.
+* Design the app's architecture for scalability, effectively managing a growing user base and content.
+
+.Could Have
+* Notification systems for new messages and content updates to keep users engaged and informed.
+
+.Won't Have
+* Additional functionalities that could negatively impact the app's core performance metrics or introduce potential security risks.
 ```
 
-1. Landing Page
-Functional Requirements:
+== Implementation
 
-Welcome Banner: Must dynamically display engaging content with scrolling or animated text highlighting the app's mission.
-Sign-In/Registration: Support sign-in and registration processes, including social media OAuth integration for convenience.
-Quick Tour: Provide a short animation or carousel explaining key features of the app.
-Non-Functional Requirements:
+```
+=== Frontend Implementation Steps
+```
 
-Usability: Ensure the landing page is intuitive and engaging for first-time users.
-Performance: The page should load quickly, with dynamic content being served efficiently.
-Security: Secure authentication mechanisms to protect user information during sign-in and registration.
-2. Dashboard
-Functional Requirements:
+.Setup Development Environment
+* Install Node.js and npm to manage the project dependencies.
+* Set up Visual Studio Code (VSCode) as the Integrated Development Environment (IDE) with extensions for React development (e.g., ESLint, Prettier, and Babel JavaScript).
+* Initialize a new React project using Create React App for boilerplate setup.
 
-Navigation Menu: Implement a sidebar or bottom navigation with icons for main app areas.
-Recent Activity Feed: Aggregate updates from followed networks, forums, etc.
-Quick Access Tiles: Offer shortcuts to frequently used features.
-Non-Functional Requirements:
+.Implement User Interface Components
+* Develop the `Landing Page` with React components for the Welcome Banner, Sign-In, Register, and Quick Tour functionalities.
+* Create the `Dashboard` component with subcomponents for the Navigation Menu, Recent Activity Feed, and Quick Access Tiles.
+* Construct the `Make Post Page`, `Messages Screen`, `User Profile Page`, and `For You Page` as separate React components following the requirements outlined earlier.
 
-Customizability: Allow users to customize the layout or the items in the quick access tiles.
-Scalability: Ensure the dashboard can handle a growing number of user interactions and content feeds efficiently.
-3. Authentication
-Functional Requirements:
+.Integrate with Backend Services
+* Utilize Firebase SDK to integrate Authentication in the Sign-In and Registration components.
+* Implement state management using React Context or Redux to manage user sessions and data throughout the application.
+* Connect the `Dashboard` and other components to Firebase Firestore to read and write data as required.
 
-Sign-In Flow: Implement a sign-in process using Firebase, including handling account existences.
-Registration Flow: Manage the registration process, including email verification and adding new user details to Firebase.
-Non-Functional Requirements:
+.Implement Routing
+* Set up React Router for navigation between different components/pages within the app.
+* Ensure that the routing is intuitive and aligns with the user flow depicted in the UML diagram.
 
-Security: Implement secure authentication processes, ensuring data protection and privacy.
-Reliability: Ensure a reliable sign-in and registration process even under high load.
-4. User Management
-Functional Requirements:
+.Testing and Quality Assurance
+* Write unit and integration tests using Jest and React Testing Library to ensure components function as expected.
+* Perform user interface testing with a group of beta testers to gather feedback on usability and experience.
+* Optimize performance and loading times using tools like Lighthouse and Webpack Bundle Analyzer.
 
-User Preferences Storage: Store and manage user settings and customization preferences.
-Profile Management: Allow users to view and edit their profile, including personal information and settings.
-Non-Functional Requirements:
+.Deployment
+* Prepare the production build of the React application using `npm run build`.
+* Deploy the application to a suitable web hosting service, considering Firebase Hosting as an initial option for seamless integration.
 
-Privacy: Ensure user data is handled and stored securely, complying with GDPR and other relevant laws.
-User Experience: Provide a smooth and intuitive interface for managing user settings and profiles.
-5. Additional Functionalities
-Functional Requirements:
+.Documentation
+* Document the usage of each component and the expected data flow between them.
+* Maintain an updated README file with setup instructions, dependencies, and deployment steps.
 
-Theme Toggling: Enable users to switch between light and dark modes.
-Messages Screen: Support viewing message requests, composing new messages, and displaying all chats.
-For You Page: Display recent polls and posts with prioritization based on likes.
-Make Post Page: Allow users to create and share posts across their profile and the For You Page.
-Non-Functional Requirements:
+.Maintenance Plan
+* Establish a process for regular updates and dependency management to keep the application secure and up-to-date.
+* Set up Continuous Integration/Continuous Deployment (CI/CD) pipelines to automate testing and deployment processes.
 
-Accessibility: Ensure all functionalities are accessible, including theme toggling and messaging features.
-Scalability: Design the system to efficiently handle increasing content and interactions over time.
-General Non-Functional Requirements for the Entire App
-Scalability: The app should efficiently manage growing amounts of data and users.
-Performance: Ensure high performance, with quick loading times and responsive interactions.
-Security: Adhere to best practices in security to protect user data and interactions.
-Usability: The app should be intuitive and easy to use, with a focus on user experience.
-Maintainability: Code should be well-documented and structured for easy maintenance and updates.
+This implementation plan is designed to guide developers through the process of building the front-end part of the CYHA MVP. The steps are laid out sequentially, ensuring a systematic approach from environment setup to deployment and maintenance.
 
-# Getting Started with Create React App
+```
+=== Backend Implementation Steps
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+.Setup Firebase Project
+* Create a new project in the Firebase console.
+* Configure Firebase Authentication to support email/password and social providers as required.
+* Initialize Firebase Firestore with initial collections: Users, Posts, Messages, and Preferences.
 
-## Available Scripts
+.Implement Authentication Service
+* Use Firebase Authentication SDK to implement sign-in, sign-up, and user session management.
+* Secure user endpoints with Firebase Security Rules.
 
-In the project directory, you can run:
+.Setup User Management Service
+* Implement functionality to handle user profile creation, updates, and preference management using Firestore.
+* Ensure GDPR compliance by adding the necessary privacy and data handling features.
+
+.Configure Post Management Service
+* Create functions to handle the creation, updating, and retrieval of posts within the Firestore.
+* Implement algorithms for post prioritization and ranking in the For You Page feed.
+
+.Develop Messaging Service
+* Use Firestore or Firebase Realtime Database to implement real-time messaging capabilities.
+* Implement logic for message requests, composing, and displaying chat histories.
+
+.Implement Additional Functionalities
+* Add theme toggling functionality by storing user preferences in Firestore.
+* Ensure that additional features meet accessibility and scalability requirements.
+
+.Setup Cloud Functions (if required)
+* Utilize Firebase Cloud Functions for any backend logic that cannot be handled directly by Firestore triggers or client-side logic.
+
+.Testing and Quality Assurance
+* Write automated tests for each service to ensure they are performing as expected.
+* Test security rules extensively to prevent unauthorized access and data breaches.
+
+.Deployment
+* Deploy cloud functions and set up database indexes and rules through Firebase CLI.
+* Ensure backend services are properly versioned and monitored using Firebase tools.
+
+.Documentation
+* Document the backend architecture and each service's endpoints and functionalities.
+* Provide clear instructions for maintenance and scaling considerations.
+
+.Maintenance Plan
+* Monitor backend performance using Firebase Analytics and adapt Firestore indexes as needed.
+* Regularly review and update Firebase Security Rules and cloud function dependencies.
+
+This plan provides a structured approach to building and deploying the backend for CYHA MVP using Firebase services. Each step ensures that the backend will be scalable, secure, and maintainable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+NPM Notes
 
 ### `npm start`
 
@@ -224,39 +284,4 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# CYHA-MVP
-# CYHA-MVP
-# CYHA-MVP
-# CYHA-MVP
-# CYHA-MVP
 # CYHA-MVP
