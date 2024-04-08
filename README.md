@@ -249,8 +249,9 @@ This plan provides a structured approach to building and deploying the backend f
 
 
 
-
+```
 NPM Notes
+```
 
 ### `npm start`
 
