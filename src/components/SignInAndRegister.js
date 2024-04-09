@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import app from '//firebaseConfig';
+import app from './firebase-config';
 
-const SignInAndRegister = () => {
+const SignInAndRegister = ({ onSignIn, onRegister }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const auth = getAuth(app);
@@ -11,7 +11,7 @@ const SignInAndRegister = () => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        alert('Account successfully created!');
+        onRegister(userCredential); // Call the onRegister prop
       })
       .catch((error) => {
         alert(error.message);
@@ -22,7 +22,7 @@ const SignInAndRegister = () => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        alert('Logged in successfully!');
+        onSignIn(userCredential); // Call the onSignIn prop
       })
       .catch((error) => {
         alert(error.message);
