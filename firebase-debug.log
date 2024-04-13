@@ -1,0 +1,161 @@
+[debug] [2024-04-09T16:06:44.233Z] ----------------------------------------------------------------------
+[debug] [2024-04-09T16:06:44.236Z] Command:       /Users/nathanbrown-bennett/.nvm/versions/node/v18.20.1/bin/node /usr/local/bin/firebase init
+[debug] [2024-04-09T16:06:44.237Z] CLI Version:   13.7.1
+[debug] [2024-04-09T16:06:44.237Z] Platform:      darwin
+[debug] [2024-04-09T16:06:44.238Z] Node Version:  v18.20.1
+[debug] [2024-04-09T16:06:44.241Z] Time:          Tue Apr 09 2024 17:06:44 GMT+0100 (British Summer Time)
+[debug] [2024-04-09T16:06:44.241Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-09T16:06:44.248Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-09T16:06:44.249Z] > authorizing via signed-in user (nathanabrownbennett@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nathanbrown-bennett/CYHA-MVP/cyha_mvp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-09T16:11:12.485Z] > refreshing access token with scopes: []
+[debug] [2024-04-09T16:11:12.488Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-09T16:11:12.488Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-09T16:12:25.306Z] ----------------------------------------------------------------------
+[debug] [2024-04-09T16:12:25.308Z] Command:       /Users/nathanbrown-bennett/.nvm/versions/node/v18.20.1/bin/node /usr/local/bin/firebase init
+[debug] [2024-04-09T16:12:25.308Z] CLI Version:   13.7.1
+[debug] [2024-04-09T16:12:25.309Z] Platform:      darwin
+[debug] [2024-04-09T16:12:25.309Z] Node Version:  v18.20.1
+[debug] [2024-04-09T16:12:25.310Z] Time:          Tue Apr 09 2024 17:12:25 GMT+0100 (British Summer Time)
+[debug] [2024-04-09T16:12:25.310Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-09T16:12:25.316Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-09T16:12:25.316Z] > authorizing via signed-in user (nathanabrownbennett@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nathanbrown-bennett/CYHA-MVP/cyha_mvp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-09T16:15:37.746Z] > refreshing access token with scopes: []
+[debug] [2024-04-09T16:15:37.749Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-09T16:15:37.749Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-09T16:15:39.224Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-09T16:15:39.225Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-09T16:15:39.248Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-09T16:15:41.655Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-04-09T16:15:41.655Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project cyha-mvp (CYHA-MVP) 
+[info] 
+=== Firestore Setup
+[debug] [2024-04-09T16:15:43.802Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/firestore.googleapis.com [none]
+[debug] [2024-04-09T16:15:43.802Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/firestore.googleapis.com x-goog-quota-user=projects/cyha-mvp
+[debug] [2024-04-09T16:15:45.298Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/firestore.googleapis.com 200
+[debug] [2024-04-09T16:15:45.298Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/firestore.googleapis.com [omitted]
+[debug] [2024-04-09T16:15:45.299Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/cyha-mvp/databases/(default) [none]
+[debug] [2024-04-09T16:15:46.024Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/cyha-mvp/databases/(default) 200
+[debug] [2024-04-09T16:15:46.024Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/cyha-mvp/databases/(default) {"name":"projects/cyha-mvp/databases/(default)","uid":"44179e39-a784-4d87-8930-6f96565080b3","createTime":"2024-04-09T14:48:11.736409Z","updateTime":"2024-04-09T14:48:11.736409Z","locationId":"europe-west2","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-04-09T15:15:45.813349Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"g","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"ILLqleDDtYUDMMaPk6iwtYUD"}
+[debug] [2024-04-09T16:15:46.024Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-04-09T16:15:46.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-09T16:15:46.025Z] > authorizing via signed-in user (nathanabrownbennett@gmail.com)
+[debug] [2024-04-09T16:15:46.025Z] [iam] checking project cyha-mvp for permissions ["firebase.projects.get"]
+[debug] [2024-04-09T16:15:46.025Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions [none]
+[debug] [2024-04-09T16:15:46.026Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions x-goog-quota-user=projects/cyha-mvp
+[debug] [2024-04-09T16:15:46.026Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-09T16:15:47.041Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions 200
+[debug] [2024-04-09T16:15:47.041Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-04-09T16:16:30.801Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/cyha-mvp/releases pageSize=10&pageToken=
+[debug] [2024-04-09T16:16:31.382Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/cyha-mvp/releases 200
+[debug] [2024-04-09T16:16:31.382Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/cyha-mvp/releases {"releases":[{"name":"projects/cyha-mvp/releases/cloud.firestore","rulesetName":"projects/cyha-mvp/rulesets/a9bcbf0b-27de-41e8-ab73-fa6f8a04bca9","createTime":"2024-04-09T14:48:19.915768Z","updateTime":"2024-04-09T14:48:19.915768Z"}]}
+[debug] [2024-04-09T16:16:31.382Z] Found ruleset: projects/cyha-mvp/rulesets/a9bcbf0b-27de-41e8-ab73-fa6f8a04bca9
+[debug] [2024-04-09T16:16:31.382Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/cyha-mvp/rulesets/a9bcbf0b-27de-41e8-ab73-fa6f8a04bca9 [none]
+[debug] [2024-04-09T16:16:32.302Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/cyha-mvp/rulesets/a9bcbf0b-27de-41e8-ab73-fa6f8a04bca9 200
+[debug] [2024-04-09T16:16:32.303Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/cyha-mvp/rulesets/a9bcbf0b-27de-41e8-ab73-fa6f8a04bca9 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Functions Setup
+[debug] [2024-04-09T16:16:41.451Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-09T16:16:41.451Z] > authorizing via signed-in user (nathanabrownbennett@gmail.com)
+[debug] [2024-04-09T16:16:41.451Z] [iam] checking project cyha-mvp for permissions ["firebase.projects.get"]
+[debug] [2024-04-09T16:16:41.451Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions [none]
+[debug] [2024-04-09T16:16:41.451Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions x-goog-quota-user=projects/cyha-mvp
+[debug] [2024-04-09T16:16:41.451Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-09T16:17:56.519Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions failed, reason: connect ETIMEDOUT 2a00:1450:4009:81d::200a:443
+[debug] [2024-04-09T16:17:56.519Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/cyha-mvp:testIamPermissions
+[debug] [2024-04-09T16:17:56.520Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-04-09T16:17:56.520Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/cyha-mvp
+[debug] [2024-04-09T16:17:56.523Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-04-09T16:17:56.523Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/cyha-mvp
+[debug] [2024-04-09T16:17:57.406Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/runtimeconfig.googleapis.com 200
+[debug] [2024-04-09T16:17:57.406Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-04-09T16:17:57.446Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/cloudfunctions.googleapis.com 200
+[debug] [2024-04-09T16:17:57.446Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/cyha-mvp/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] i  Skipping write of functions/package.json 
+[info] i  Skipping write of functions/.eslintrc.js 
+[info] i  Skipping write of functions/index.js 
+[info] i  Skipping write of functions/.gitignore 
+[info] 
+[error] NPM install failed, continuing with Firebase initialization...
+[info] 
+=== Hosting Setup
+[debug] [2024-04-10T00:25:03.921Z] > refreshing access token with scopes: []
+[debug] [2024-04-10T00:25:03.929Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-10T00:25:03.929Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-10T00:25:04.288Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------867971214402338601535952","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ECONNREFUSED 2a00:1450:4009:81f::200a:443
+[debug] [2024-04-10T00:25:04.289Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-04-10T00:25:04.366Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (/usr/local/lib/node_modules/firebase-tools/lib/auth.js:142:12)
+    at refreshTokens (/usr/local/lib/node_modules/firebase-tools/lib/auth.js:515:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:163:22)
+    at async Client.addAuthHeader (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:154:21)
+    at async Client.request (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:105:34)
+    at async getFirebaseProject (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:295:21)
+    at async getDefaultHostingSite (/usr/local/lib/node_modules/firebase-tools/lib/getDefaultHostingSite.js:14:21)
+    at async doSetup (/usr/local/lib/node_modules/firebase-tools/lib/init/features/hosting/index.js:27:13)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:37:9)
+[error] 
+[error] Error: Failed to get Firebase project cyha-mvp. Please make sure the project exists and your account has permission to access it.
